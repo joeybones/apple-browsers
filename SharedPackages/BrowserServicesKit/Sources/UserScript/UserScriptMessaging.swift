@@ -181,7 +181,7 @@ public final class UserScriptMessageBroker: NSObject {
 
         /// Check if the selected delegate accepts messages from this origin
         guard delegate.messageOriginPolicy.isAllowed(hostProvider.hostForMessage(message)) else {
-            return .error(.policyRestriction)
+            return .error(.policyRestriction(origin: hostProvider.hostForMessage(message), feature: featureName))
         }
 
         /// Now ask the delegate to provide the handler
@@ -267,7 +267,7 @@ public enum BrokerError: Error {
     case invalidParams
     case notFoundFeature(String)
     case notFoundHandler(feature: String, method: String)
-    case policyRestriction
+    case policyRestriction(origin: String, feature: String)
 }
 
 extension BrokerError: LocalizedError {
@@ -279,8 +279,8 @@ extension BrokerError: LocalizedError {
             return "feature named `\(feature)` was not found"
         case .notFoundHandler(let feature, let method):
             return "the incoming message is ignored because the feature `\(feature)` couldn't provide a handler for method `\(method)`"
-        case .policyRestriction:
-            return "invalid origin"
+        case .policyRestriction(let origin, let feature):
+            return "Origin '\(origin)' is not allowed to access feature '\(feature)'. This feature has restricted origin access. Check the feature's MessageOriginPolicy configuration to see which origins are permitted."
         }
     }
 }
