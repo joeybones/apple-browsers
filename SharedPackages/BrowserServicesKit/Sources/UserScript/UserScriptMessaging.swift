@@ -280,7 +280,7 @@ extension BrokerError: LocalizedError {
         case .notFoundHandler(let feature, let method):
             return "the incoming message is ignored because the feature `\(feature)` couldn't provide a handler for method `\(method)`"
         case .policyRestriction(let origin, let feature):
-            return "Origin '\(origin)' is not allowed to access feature '\(feature)'. This feature has restricted origin access. Check the feature's MessageOriginPolicy configuration to see which origins are permitted."
+            return "Origin '\(origin)' is not allowed to access feature '\(feature)'. Check the MessageOriginPolicy configuration to see which origins are permitted."
         }
     }
 }
