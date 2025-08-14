@@ -110,12 +110,14 @@ final class NavigationActionBarView: UIView {
         mainStackView.translatesAutoresizingMaskIntoConstraints = false
         backgroundGradientView.translatesAutoresizingMaskIntoConstraints = false
         
+        let mainStackMinHeightConstraint = mainStackView.heightAnchor.constraint(greaterThanOrEqualToConstant: Constants.buttonSize)
         NSLayoutConstraint.activate([
             // Main stack view constraints
             mainStackView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Constants.padding),
             mainStackView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -Constants.padding),
             mainStackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: Constants.padding),
             mainStackView.bottomAnchor.constraint(equalTo: keyboardLayoutGuide.topAnchor, constant: -Constants.padding),
+            mainStackMinHeightConstraint,
 
             // Background gradient should align with the keyboard (or bottom safe area)
             backgroundGradientView.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -160,7 +162,6 @@ final class NavigationActionBarView: UIView {
     }
     
     private func setupBindings() {
-        // Observe view model changes
         viewModel.$isSearchMode
             .receive(on: DispatchQueue.main)
             .sink { [weak self] _ in
@@ -183,6 +184,13 @@ final class NavigationActionBarView: UIView {
             .store(in: &cancellables)
         
         viewModel.$isCurrentTextValidURL
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.updateUI()
+            }
+            .store(in: &cancellables)
+        
+        viewModel.$isKeyboardVisible
             .receive(on: DispatchQueue.main)
             .sink { [weak self] _ in
                 self?.updateUI()
@@ -225,7 +233,6 @@ final class NavigationActionBarView: UIView {
         let isValidURL = viewModel.isCurrentTextValidURL
         let isSearchMode = viewModel.isSearchMode
         
-        // Determine icon
         let icon: UIImage? = {
             if isSearchMode && !isValidURL {
                 return DesignSystemImages.Glyphs.Size24.searchFind
@@ -241,18 +248,18 @@ final class NavigationActionBarView: UIView {
         )
         searchButton.isEnabled = hasText
         
-        // Animate changes
         UIView.animate(withDuration: 0.2) {
             self.searchButton.alpha = hasText ? 1.0 : 0.5
         }
     }
     
     private func updateButtonVisibility() {
-        // Update microphone button visibility
         let shouldShowMicButton = viewModel.shouldShowMicButton
         microphoneButton.isHidden = !shouldShowMicButton
         
-        // Update search button visibility
+        let shouldShowNewLineButton = viewModel.isKeyboardVisible && viewModel.hasText
+        newLineButton.isHidden = !shouldShowNewLineButton
+        
         let shouldShowSearchButton = viewModel.hasText
         searchButton.isHidden = !shouldShowSearchButton
     }

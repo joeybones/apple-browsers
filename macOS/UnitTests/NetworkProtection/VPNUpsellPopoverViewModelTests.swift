@@ -46,6 +46,7 @@ final class VPNUpsellPopoverViewModelTests: XCTestCase {
         firedPixels = []
 
         mockFeatureFlagger.enabledFeatureFlags = [.vpnToolbarUpsell]
+        mockSubscriptionManager.currentEnvironment = .init(serviceEnvironment: .staging, purchasePlatform: .stripe)
 
         vpnUpsellVisibilityManager = VPNUpsellVisibilityManager(
             isFirstLaunch: false,
@@ -258,6 +259,7 @@ final class VPNUpsellPopoverViewModelTests: XCTestCase {
         // Given
         let expectation = XCTestExpectation(description: "Feature set should be updated")
         mockSubscriptionManager.enabledFeatures = [.dataBrokerProtection]
+        mockSubscriptionManager.subscriptionFeatures = [.dataBrokerProtection]
 
         sut.$featureSet
             .dropFirst()
@@ -313,6 +315,7 @@ final class VPNUpsellPopoverViewModelTests: XCTestCase {
          // Given
         let expectation = XCTestExpectation(description: "Feature set should be updated")
         mockSubscriptionManager.enabledFeatures = [.dataBrokerProtection, .paidAIChat]
+        mockSubscriptionManager.subscriptionFeatures = [.dataBrokerProtection, .paidAIChat]
 
         sut.$featureSet
             .dropFirst()
