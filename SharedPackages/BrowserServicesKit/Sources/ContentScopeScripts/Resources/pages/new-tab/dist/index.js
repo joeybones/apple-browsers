@@ -1094,7 +1094,7 @@
           var r4, f4 = n3.__c;
           if (f4) {
             f4.__$f &= -2;
-            if (void 0 === (r4 = f4.__$u)) f4.__$u = r4 = function(i6) {
+            if (void 0 === (r4 = f4.__$u)) f4.__$u = r4 = (function(i6) {
               var n4;
               E2(function() {
                 n4 = this;
@@ -1104,7 +1104,7 @@
                 f4.setState({});
               };
               return n4;
-            }();
+            })();
           }
           l4 = f4;
           g4(r4);
@@ -1605,13 +1605,30 @@
     )), /* @__PURE__ */ _("defs", null, /* @__PURE__ */ _("clipPath", { id: "Find-Search-16_svg__a" }, /* @__PURE__ */ _("path", { fill: "#fff", d: "M0 0h16v16H0z" }))));
   }
   function SearchColorIcon(props) {
-    return /* @__PURE__ */ _("svg", { width: "16", height: "16", fill: "none", viewBox: "0 0 16 16", xmlns: "http://www.w3.org/2000/svg", ...props }, /* @__PURE__ */ _("g", { "clip-path": "url(#Search-Find-Color-16_svg__a)" }, /* @__PURE__ */ _("path", { fill: "#ADC2FC", d: "M12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z" }), /* @__PURE__ */ _("path", { fill: "#fff", d: "M7 2a4.98 4.98 0 0 1 3.403 1.338 5.5 5.5 0 0 0-7.065 7.065A5 5 0 0 1 7 2Z", opacity: ".5" }), /* @__PURE__ */ _(
+    return /* @__PURE__ */ _("svg", { width: "16", height: "16", fill: "none", viewBox: "0 0 16 16", xmlns: "http://www.w3.org/2000/svg", ...props }, /* @__PURE__ */ _("g", { "clip-path": "url(#Search-Find-Color-16_svg__a)" }, /* @__PURE__ */ _("path", { fill: "#CCDAFF", d: "M13 7A6 6 0 1 1 1 7a6 6 0 0 1 12 0Z" }), /* @__PURE__ */ _("path", { fill: "#fff", d: "M7 2a4.98 4.98 0 0 1 3.403 1.338 5.5 5.5 0 0 0-7.065 7.065A5 5 0 0 1 7 2Z", opacity: ".5" }), /* @__PURE__ */ _(
       "path",
       {
-        fill: "#557FF3",
+        fill: "url(#Search-Find-Color-16_svg__b)",
         d: "M7 0a7 7 0 0 1 5.372 11.488l3.445 3.445.043.047a.625.625 0 0 1-.88.88l-.047-.043-3.445-3.445A7 7 0 1 1 7 0Zm0 1a6 6 0 1 0 0 12A6 6 0 0 0 7 1Z"
       }
-    )), /* @__PURE__ */ _("defs", null, /* @__PURE__ */ _("clipPath", { id: "Search-Find-Color-16_svg__a" }, /* @__PURE__ */ _("path", { fill: "#fff", d: "M0 0h16v16H0z" }))));
+    )), /* @__PURE__ */ _("defs", null, /* @__PURE__ */ _("linearGradient", { id: "Search-Find-Color-16_svg__b", x1: "8", x2: "8", y1: "0", y2: "16", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ _("stop", { "stop-color": "#557FF3" }), /* @__PURE__ */ _("stop", { offset: "1", "stop-color": "#2B55CA" })), /* @__PURE__ */ _("clipPath", { id: "Search-Find-Color-16_svg__a" }, /* @__PURE__ */ _("path", { fill: "#fff", d: "M0 0h16v16H0z" }))));
+  }
+  function SearchOnDarkColorIcon(props) {
+    return /* @__PURE__ */ _("svg", { width: "16", height: "16", fill: "none", viewBox: "0 0 16 16", xmlns: "http://www.w3.org/2000/svg", ...props }, /* @__PURE__ */ _("g", { "clip-path": "url(#Search-Find-OnDark-Color-16_svg__a)" }, /* @__PURE__ */ _("path", { fill: "#444", d: "M13 7A6 6 0 1 1 1 7a6 6 0 0 1 12 0Z" }), /* @__PURE__ */ _(
+      "path",
+      {
+        fill: "#fff",
+        "fill-opacity": ".4",
+        d: "M7 2c1.315 0 2.512.508 3.404 1.339a5.5 5.5 0 0 0-7.065 7.065A5 5 0 0 1 7 2Z",
+        opacity: ".5"
+      }
+    ), /* @__PURE__ */ _(
+      "path",
+      {
+        fill: "url(#Search-Find-OnDark-Color-16_svg__b)",
+        d: "M7 0a7 7 0 0 1 5.371 11.486l3.446 3.447.08.098a.626.626 0 0 1-.866.867l-.098-.08-3.447-3.447A7 7 0 1 1 7 0Zm0 1a6 6 0 1 0 0 12A6 6 0 0 0 7 1Z"
+      }
+    )), /* @__PURE__ */ _("defs", null, /* @__PURE__ */ _("linearGradient", { id: "Search-Find-OnDark-Color-16_svg__b", x1: "8", x2: "8", y1: "0", y2: "16", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ _("stop", { "stop-color": "#CCDAFF" }), /* @__PURE__ */ _("stop", { offset: "1", "stop-color": "#8FABF9" })), /* @__PURE__ */ _("clipPath", { id: "Search-Find-OnDark-Color-16_svg__a" }, /* @__PURE__ */ _("path", { fill: "#fff", d: "M0 0h16v16H0z" }))));
   }
   function AiChatIcon(props) {
     return /* @__PURE__ */ _("svg", { width: "16", height: "16", fill: "none", viewBox: "0 0 16 16", xmlns: "http://www.w3.org/2000/svg", ...props }, /* @__PURE__ */ _("g", { fill: "currentColor", "clip-path": "url(#Ai-Chat-16_svg__a)" }, /* @__PURE__ */ _(
@@ -1624,16 +1641,16 @@
     ), /* @__PURE__ */ _("path", { d: "M7.62 3.271c.099-.396.661-.396.76 0l.22.878a3.27 3.27 0 0 0 2.376 2.376l.878.22c.396.099.396.661 0 .76l-.878.22A3.27 3.27 0 0 0 8.6 10.102l-.219.877c-.099.396-.661.396-.76 0l-.22-.877a3.27 3.27 0 0 0-2.377-2.377l-.877-.22c-.396-.099-.396-.661 0-.76l.877-.22A3.27 3.27 0 0 0 7.4 4.15l.22-.878Z" })), /* @__PURE__ */ _("defs", null, /* @__PURE__ */ _("clipPath", { id: "Ai-Chat-16_svg__a" }, /* @__PURE__ */ _("path", { fill: "#fff", d: "M0 0h16v16H0z" }))));
   }
   function AiChatColorIcon(props) {
-    return /* @__PURE__ */ _("svg", { width: "16", height: "16", fill: "none", viewBox: "0 0 16 16", xmlns: "http://www.w3.org/2000/svg", ...props }, /* @__PURE__ */ _("g", { "clip-path": "url(#Ai-Chat-Gradient-Color-16_svg__a)" }, /* @__PURE__ */ _(
+    return /* @__PURE__ */ _("svg", { width: "16", height: "16", fill: "none", viewBox: "0 0 16 16", xmlns: "http://www.w3.org/2000/svg", ...props }, /* @__PURE__ */ _("g", { "clip-path": "url(#Ai-Chat-Color-16_svg__a)" }, /* @__PURE__ */ _(
       "path",
       {
-        fill: "url(#Ai-Chat-Gradient-Color-16_svg__b)",
+        fill: "url(#Ai-Chat-Color-16_svg__b)",
         d: "M1.164 14.763c-.441.51-.014 1.284.65 1.17 2.655-.457 7.306-1.338 9.199-2.206C13.938 12.667 16 10.111 16 7.125 16 3.19 12.418 0 8 0S0 3.19 0 7.125c0 1.974.902 3.76 2.358 5.051.32.283.38.773.1 1.095l-1.294 1.492Z"
       }
     ), /* @__PURE__ */ _(
       "path",
       {
-        fill: "url(#Ai-Chat-Gradient-Color-16_svg__c)",
+        fill: "url(#Ai-Chat-Color-16_svg__c)",
         d: "M15 7.125c0 2.495-1.729 4.72-4.328 5.662l-.039.014-.037.017c-.838.384-2.376.803-4.114 1.19a98.74 98.74 0 0 1-4.03.797l.762-.878c.68-.785.487-1.898-.193-2.5-1.227-1.087-1.973-2.55-2.019-4.147L1 7.125C1 3.848 4.022 1 8 1V0l-.207.003C3.54.099.11 3.153.003 6.94L0 7.125c0 1.913.846 3.649 2.223 4.929l.135.122c.32.283.38.773.1 1.096l-1.293 1.491c-.442.51-.015 1.284.65 1.17 2.654-.456 7.305-1.338 9.198-2.206C13.938 12.667 16 10.111 16 7.125l-.002-.184C15.888 3.091 12.349.001 8 .001v1c3.916 0 6.905 2.759 6.998 5.97l.002.154Z"
       }
     ), /* @__PURE__ */ _(
@@ -1645,7 +1662,7 @@
     ), /* @__PURE__ */ _(
       "path",
       {
-        fill: "url(#Ai-Chat-Gradient-Color-16_svg__d)",
+        fill: "url(#Ai-Chat-Color-16_svg__d)",
         d: "M6.662 2.544C7 1.195 8.867 1.154 9.3 2.418l.038.126.438 1.753c.114.457.47.813.927.927l1.753.438c1.392.348 1.392 2.328 0 2.676l-1.753.438c-.457.114-.813.47-.927.927l-.438 1.753c-.348 1.392-2.328 1.392-2.676 0l-.438-1.753a1.274 1.274 0 0 0-.927-.927l-1.753-.438c-1.392-.348-1.392-2.328 0-2.676l1.753-.438c.457-.114.813-.47.927-.927l.438-1.753ZM8 5.271A3.273 3.273 0 0 1 6.27 7 3.273 3.273 0 0 1 8 8.729 3.274 3.274 0 0 1 9.729 7 3.273 3.273 0 0 1 8 5.27Z"
       }
     ), /* @__PURE__ */ _(
@@ -1654,7 +1671,40 @@
         fill: "#fff",
         d: "M7.632 2.787c.096-.383.64-.383.736 0l.438 1.753c.203.815.84 1.45 1.654 1.654l1.753.438c.383.096.383.64 0 .736l-1.753.438c-.815.203-1.45.84-1.654 1.654l-.438 1.753c-.096.383-.64.383-.736 0L7.194 9.46A2.273 2.273 0 0 0 5.54 7.806l-1.753-.438c-.383-.096-.383-.64 0-.736l1.753-.438A2.273 2.273 0 0 0 7.194 4.54l.438-1.753Z"
       }
-    )), /* @__PURE__ */ _("defs", null, /* @__PURE__ */ _("linearGradient", { id: "Ai-Chat-Gradient-Color-16_svg__b", x1: "8", x2: "8", y1: "0", y2: "15.944", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ _("stop", { "stop-color": "#A7B7FD" }), /* @__PURE__ */ _("stop", { offset: "1", "stop-color": "#5981F3" })), /* @__PURE__ */ _("linearGradient", { id: "Ai-Chat-Gradient-Color-16_svg__c", x1: "8", x2: "8", y1: "0", y2: "15.944", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ _("stop", { "stop-color": "#7C99F7" }), /* @__PURE__ */ _("stop", { offset: "1", "stop-color": "#4B74EE" })), /* @__PURE__ */ _("linearGradient", { id: "Ai-Chat-Gradient-Color-16_svg__d", x1: "8", x2: "8", y1: "2.5", y2: "11.5", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ _("stop", { "stop-color": "#8EA6FA" }), /* @__PURE__ */ _("stop", { offset: "1", "stop-color": "#6186F4" })), /* @__PURE__ */ _("clipPath", { id: "Ai-Chat-Gradient-Color-16_svg__a" }, /* @__PURE__ */ _("path", { fill: "#fff", d: "M0 0h16v16H0z" }))));
+    )), /* @__PURE__ */ _("defs", null, /* @__PURE__ */ _("linearGradient", { id: "Ai-Chat-Color-16_svg__b", x1: "8", x2: "8", y1: "0", y2: "15.944", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ _("stop", { "stop-color": "#A7B7FD" }), /* @__PURE__ */ _("stop", { offset: "1", "stop-color": "#3969EF" })), /* @__PURE__ */ _("linearGradient", { id: "Ai-Chat-Color-16_svg__c", x1: "8", x2: "8", y1: "15.944", y2: "0", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ _("stop", { "stop-color": "#2B55CA" }), /* @__PURE__ */ _("stop", { offset: "1", "stop-color": "#557FF3" })), /* @__PURE__ */ _("linearGradient", { id: "Ai-Chat-Color-16_svg__d", x1: "8", x2: "8", y1: "2.5", y2: "11.5", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ _("stop", { "stop-color": "#839DF9" }), /* @__PURE__ */ _("stop", { offset: "1", "stop-color": "#3969EF" })), /* @__PURE__ */ _("clipPath", { id: "Ai-Chat-Color-16_svg__a" }, /* @__PURE__ */ _("path", { fill: "#fff", d: "M0 0h16v16H0z" }))));
+  }
+  function AiChatOnDarkColorIcon(props) {
+    return /* @__PURE__ */ _("svg", { width: "16", height: "16", fill: "none", viewBox: "0 0 16 16", xmlns: "http://www.w3.org/2000/svg", ...props }, /* @__PURE__ */ _("g", { "clip-path": "url(#Ai-Chat-OnDark-Color-16_svg__a)" }, /* @__PURE__ */ _(
+      "path",
+      {
+        fill: "url(#Ai-Chat-OnDark-Color-16_svg__b)",
+        d: "M1.164 14.763c-.441.51-.014 1.284.65 1.17 2.655-.457 7.306-1.338 9.199-2.206C13.938 12.667 16 10.111 16 7.125 16 3.19 12.418 0 8 0S0 3.19 0 7.125c0 1.974.902 3.76 2.358 5.051.32.283.38.773.1 1.095l-1.294 1.492Z"
+      }
+    ), /* @__PURE__ */ _(
+      "path",
+      {
+        fill: "url(#Ai-Chat-OnDark-Color-16_svg__c)",
+        d: "M15 7.125c0 2.495-1.729 4.72-4.328 5.662l-.039.014-.037.017c-.838.384-2.376.803-4.114 1.19a98.74 98.74 0 0 1-4.03.797l.762-.878c.68-.785.487-1.898-.193-2.5-1.227-1.087-1.973-2.55-2.019-4.147L1 7.125C1 3.848 4.022 1 8 1V0l-.207.003C3.54.099.11 3.153.003 6.94L0 7.125c0 1.913.846 3.649 2.223 4.929l.135.122c.32.283.38.773.1 1.096l-1.293 1.491c-.442.51-.015 1.284.65 1.17 2.654-.456 7.305-1.338 9.198-2.206C13.938 12.667 16 10.111 16 7.125l-.002-.184C15.888 3.091 12.349.001 8 .001v1c3.916 0 6.905 2.759 6.998 5.97l.002.154Z"
+      }
+    ), /* @__PURE__ */ _(
+      "path",
+      {
+        fill: "#fff",
+        d: "M7.632 2.787c.096-.383.64-.383.736 0l.438 1.753c.203.815.84 1.45 1.654 1.654l1.753.438c.383.096.383.64 0 .736l-1.753.438c-.815.203-1.45.84-1.654 1.654l-.438 1.753c-.096.383-.64.383-.736 0L7.194 9.46A2.273 2.273 0 0 0 5.54 7.806l-1.753-.438c-.383-.096-.383-.64 0-.736l1.753-.438A2.273 2.273 0 0 0 7.194 4.54l.438-1.753Z"
+      }
+    ), /* @__PURE__ */ _(
+      "path",
+      {
+        fill: "url(#Ai-Chat-OnDark-Color-16_svg__d)",
+        d: "M6.662 2.544C7 1.195 8.867 1.154 9.3 2.418l.038.126.438 1.753c.114.457.47.813.927.927l1.753.438c1.392.348 1.392 2.328 0 2.676l-1.753.438c-.457.114-.813.47-.927.927l-.438 1.753c-.348 1.392-2.328 1.392-2.676 0l-.438-1.753a1.274 1.274 0 0 0-.927-.927l-1.753-.438c-1.392-.348-1.392-2.328 0-2.676l1.753-.438c.457-.114.813-.47.927-.927l.438-1.753ZM8 5.271A3.273 3.273 0 0 1 6.27 7 3.273 3.273 0 0 1 8 8.729 3.274 3.274 0 0 1 9.729 7 3.273 3.273 0 0 1 8 5.27Z"
+      }
+    ), /* @__PURE__ */ _(
+      "path",
+      {
+        fill: "#2B55CA",
+        d: "M7.632 2.787c.096-.383.64-.383.736 0l.438 1.753c.203.815.84 1.45 1.654 1.654l1.753.438c.383.096.383.64 0 .736l-1.753.438c-.815.203-1.45.84-1.654 1.654l-.438 1.753c-.096.383-.64.383-.736 0L7.194 9.46A2.273 2.273 0 0 0 5.54 7.806l-1.753-.438c-.383-.096-.383-.64 0-.736l1.753-.438A2.273 2.273 0 0 0 7.194 4.54l.438-1.753Z"
+      }
+    )), /* @__PURE__ */ _("defs", null, /* @__PURE__ */ _("linearGradient", { id: "Ai-Chat-OnDark-Color-16_svg__b", x1: "8", x2: "8", y1: "0", y2: "15.944", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ _("stop", { "stop-color": "#CCDAFF" }), /* @__PURE__ */ _("stop", { offset: "1", "stop-color": "#8FABF9" })), /* @__PURE__ */ _("linearGradient", { id: "Ai-Chat-OnDark-Color-16_svg__c", x1: "8", x2: "8", y1: "15.944", y2: "0", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ _("stop", { "stop-color": "#557FF3" }), /* @__PURE__ */ _("stop", { offset: "1", "stop-color": "#ADC2FC" })), /* @__PURE__ */ _("linearGradient", { id: "Ai-Chat-OnDark-Color-16_svg__d", x1: "8", x2: "8", y1: "2.5", y2: "11.5", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ _("stop", { "stop-color": "#CCDAFF" }), /* @__PURE__ */ _("stop", { offset: "1", "stop-color": "#ADC2FC" })), /* @__PURE__ */ _("clipPath", { id: "Ai-Chat-OnDark-Color-16_svg__a" }, /* @__PURE__ */ _("path", { fill: "#fff", d: "M0 0h16v16H0z" }))));
   }
   function ArrowRightIcon(props) {
     return /* @__PURE__ */ _("svg", { width: "16", height: "16", fill: "none", viewBox: "0 0 16 16", xmlns: "http://www.w3.org/2000/svg", ...props }, /* @__PURE__ */ _(
@@ -1803,7 +1853,7 @@
       "path",
       {
         fill: "currentColor",
-        d: "M10.433 4.683a.625.625 0 1 1 .884.884L8.884 8l2.433 2.433a.625.625 0 1 1-.884.884L8 8.884l-2.433 2.433a.625.625 0 1 1-.884-.884L7.116 8 4.683 5.567a.625.625 0 1 1 .884-.884L8 7.116l2.433-2.433Z"
+        d: "M11.933 3.183a.625.625 0 1 1 .884.884L8.884 8l3.933 3.933a.625.625 0 1 1-.884.884L8 8.884l-3.933 3.933a.625.625 0 1 1-.884-.884L7.116 8 3.183 4.067a.625.625 0 1 1 .884-.884L8 7.116l3.933-3.933Z"
       }
     ));
   }
@@ -1835,7 +1885,7 @@
         e4.preventDefault();
         e4.stopImmediatePropagation();
         const items = getItems();
-        const simplified = items.filter((x3) => x3.id !== "debug").map((item) => {
+        const simplified = items.filter((x3) => !x3.id.startsWith("_")).map((item) => {
           return {
             id: item.id,
             title: item.title
@@ -3320,7 +3370,7 @@
       // The most I've seen is 3
       {
         type: "pointermove",
-        listener: /* @__PURE__ */ function() {
+        listener: /* @__PURE__ */ (function() {
           var callCount = 0;
           return function listener() {
             if (callCount < 20) {
@@ -3329,7 +3379,7 @@
             }
             onDragEnd();
           };
-        }()
+        })()
       },
       // ### Second detection: "pointerdown" events
       // If we receive this event then we know that a drag operation has finished
@@ -3497,7 +3547,7 @@
       scheduleOnDrag = raf_schd_esm_default(function(fn2) {
         return fn2();
       });
-      dragStart = /* @__PURE__ */ function() {
+      dragStart = /* @__PURE__ */ (function() {
         var scheduled = null;
         function schedule(fn2) {
           var frameId = requestAnimationFrame(function() {
@@ -3520,7 +3570,7 @@
           schedule,
           flush
         };
-      }();
+      })();
     }
   });
 
@@ -5410,7 +5460,7 @@
       } };
       fn = l.vnode;
       l.vnode = function(n3) {
-        "string" == typeof n3.type && function(n4) {
+        "string" == typeof n3.type && (function(n4) {
           var t4 = n4.props, e4 = n4.type, u4 = {}, o4 = -1 === e4.indexOf("-");
           for (var i5 in t4) {
             var l5 = t4[i5];
@@ -5424,7 +5474,7 @@
           })), "select" == e4 && null != u4.defaultValue && (u4.value = H(t4.children).forEach(function(n5) {
             n5.props.selected = u4.multiple ? -1 != u4.defaultValue.indexOf(n5.props.value) : u4.defaultValue == n5.props.value;
           })), t4.class && !t4.className ? (u4.class = t4.class, Object.defineProperty(u4, "className", cn)) : (t4.className && !t4.class || t4.class && t4.className) && (u4.class = u4.className = t4.className), n4.props = u4;
-        }(n3), n3.$$typeof = q4, fn && fn(n3);
+        })(n3), n3.$$typeof = q4, fn && fn(n3);
       };
       an = l.__r;
       l.__r = function(n3) {
@@ -7546,7 +7596,9 @@
           this.configService.update((old) => {
             return {
               ...old,
-              enableAi
+              enableAi,
+              // Force mode to 'search' when Duck.ai is disabled to prevent getting stuck in 'ai' mode
+              mode: enableAi ? old.mode : "search"
             };
           });
         }
@@ -7767,7 +7819,7 @@
   });
 
   // pages/new-tab/app/omnibar/components/AiChatForm.js
-  function AiChatForm({ chat, autoFocus, onFocus, onBlur, onInput, onChange, onSubmit }) {
+  function AiChatForm({ chat, autoFocus, onChange, onSubmit }) {
     const { t: t4 } = useTypedTranslationWith(
       /** @type {Strings} */
       {}
@@ -7837,9 +7889,6 @@
         "aria-label": t4("omnibar_aiChatFormPlaceholder"),
         autoComplete: "off",
         rows: 1,
-        onFocusCapture: onFocus,
-        onBlurCapture: onBlur,
-        onInput,
         onKeyDown: handleKeyDown,
         onChange: (event) => onChange(event.currentTarget.value)
       }
@@ -8321,7 +8370,7 @@
     );
     const platformName = usePlatformName();
     const {
-      term,
+      term: _term,
       setTerm,
       suggestionsListId,
       suggestions,
@@ -8332,6 +8381,7 @@
       clearSelectedSuggestion,
       hideSuggestions
     } = useSearchFormContext();
+    const term = _term.replace(/\n/g, " ");
     let inputBase, inputCompletion;
     if (selectedSuggestion) {
       const completionString = getSuggestionCompletionString(selectedSuggestion, term);
@@ -8438,7 +8488,7 @@
           }
         }
       ),
-      inputSuffix && /* @__PURE__ */ _(k, null, /* @__PURE__ */ _("span", { class: SearchForm_default.suffixSpacer, inert: true }, (inputBase + inputCompletion).replace(/\n/g, "") || t4("omnibar_searchFormPlaceholder")), /* @__PURE__ */ _("span", { class: SearchForm_default.suffix, inert: true }, inputSuffixText)),
+      inputSuffix && /* @__PURE__ */ _(k, null, /* @__PURE__ */ _("span", { class: SearchForm_default.suffixSpacer, inert: true }, inputBase + inputCompletion || t4("omnibar_searchFormPlaceholder")), /* @__PURE__ */ _("span", { class: SearchForm_default.suffix, inert: true }, inputSuffixText)),
       term.length > 0 && /* @__PURE__ */ _(
         "button",
         {
@@ -8447,11 +8497,9 @@
           tabIndex: 0,
           onClick: (event) => {
             event.preventDefault();
-            if (suggestions.length > 0) {
-              hideSuggestions();
-            } else {
-              setTerm("");
-            }
+            hideSuggestions();
+            setTerm("");
+            inputRef.current?.focus();
           }
         },
         /* @__PURE__ */ _(CloseSmallIcon, null)
@@ -8588,15 +8636,27 @@
         "aria-label": t4("omnibar_tabSwitcherLabel")
       },
       /* @__PURE__ */ _("div", { class: TabSwitcher_default.blob }),
-      /* @__PURE__ */ _("button", { class: TabSwitcher_default.tab, role: "tab", "aria-selected": mode === "search", onClick: () => onChange("search") }, mode === "search" ? /* @__PURE__ */ _(SearchColorIcon, null) : /* @__PURE__ */ _(SearchIcon, null), /* @__PURE__ */ _("span", { class: TabSwitcher_default.tabLabel }, t4("omnibar_searchTabLabel"))),
-      /* @__PURE__ */ _("button", { class: TabSwitcher_default.tab, role: "tab", "aria-selected": mode === "ai", onClick: () => onChange("ai") }, mode === "ai" ? /* @__PURE__ */ _(AiChatColorIcon, null) : /* @__PURE__ */ _(AiChatIcon, null), /* @__PURE__ */ _("span", { class: TabSwitcher_default.tabLabel }, t4("omnibar_aiTabLabel")))
+      /* @__PURE__ */ _("button", { class: TabSwitcher_default.tab, role: "tab", "aria-selected": mode === "search", onClick: () => onChange("search") }, /* @__PURE__ */ _(TabIcon, { mode: "search", selected: mode === "search" }), /* @__PURE__ */ _("span", { class: TabSwitcher_default.tabLabel }, t4("omnibar_searchTabLabel"))),
+      /* @__PURE__ */ _("button", { class: TabSwitcher_default.tab, role: "tab", "aria-selected": mode === "ai", onClick: () => onChange("ai") }, /* @__PURE__ */ _(TabIcon, { mode: "ai", selected: mode === "ai" }), /* @__PURE__ */ _("span", { class: TabSwitcher_default.tabLabel }, t4("omnibar_aiTabLabel")))
     );
+  }
+  function TabIcon({ mode, selected }) {
+    const { main } = x2(CustomizerThemesContext);
+    if (mode === "search") {
+      if (selected) return main.value === "light" ? /* @__PURE__ */ _(SearchColorIcon, null) : /* @__PURE__ */ _(SearchOnDarkColorIcon, null);
+      return /* @__PURE__ */ _(SearchIcon, null);
+    } else {
+      if (selected) return main.value === "light" ? /* @__PURE__ */ _(AiChatColorIcon, null) : /* @__PURE__ */ _(AiChatOnDarkColorIcon, null);
+      return /* @__PURE__ */ _(AiChatIcon, null);
+    }
   }
   var init_TabSwitcher2 = __esm({
     "pages/new-tab/app/omnibar/components/TabSwitcher.js"() {
       "use strict";
       init_preact_module();
+      init_hooks_module();
       init_Icons2();
+      init_CustomizerProvider();
       init_types();
       init_TabSwitcher();
     }
@@ -8614,10 +8674,6 @@
     );
     const [resetKey, setResetKey] = d2(0);
     const [autoFocus, setAutoFocus] = d2(false);
-    const [focusRing, setFocusRing] = d2(
-      /** @type {boolean|undefined} */
-      void 0
-    );
     const { openSuggestion, submitSearch, submitChat } = x2(OmnibarContext);
     const resetForm = () => {
       setQuery("");
@@ -8637,21 +8693,9 @@
     };
     const handleChangeMode = (nextMode) => {
       setAutoFocus(true);
-      setFocusRing(void 0);
       setMode(nextMode);
     };
-    return /* @__PURE__ */ _("div", { key: resetKey, class: Omnibar_default.root, "data-mode": mode, "data-focus-ring": focusRing }, /* @__PURE__ */ _(LogoStacked, { class: Omnibar_default.logo, "aria-label": t4("omnibar_logoAlt") }), enableAi && /* @__PURE__ */ _(TabSwitcher, { mode, onChange: handleChangeMode }), /* @__PURE__ */ _(SearchFormProvider, { term: query, setTerm: setQuery }, /* @__PURE__ */ _("div", { class: Omnibar_default.spacer }, /* @__PURE__ */ _("div", { class: Omnibar_default.popup }, /* @__PURE__ */ _(ResizingContainer, { className: Omnibar_default.field }, mode === "search" ? /* @__PURE__ */ _(SearchForm, { autoFocus, onOpenSuggestion: handleOpenSuggestion, onSubmit: handleSubmitSearch }) : /* @__PURE__ */ _(
-      AiChatForm,
-      {
-        chat: query,
-        autoFocus,
-        onFocus: () => setFocusRing(true),
-        onBlur: () => setFocusRing(false),
-        onInput: () => setFocusRing(false),
-        onChange: setQuery,
-        onSubmit: handleSubmitChat
-      }
-    )), mode === "search" && /* @__PURE__ */ _(SuggestionsList, { onOpenSuggestion: handleOpenSuggestion })))));
+    return /* @__PURE__ */ _("div", { key: resetKey, class: Omnibar_default.root, "data-mode": mode }, /* @__PURE__ */ _(LogoStacked, { class: Omnibar_default.logo, "aria-label": t4("omnibar_logoAlt") }), enableAi && /* @__PURE__ */ _(TabSwitcher, { mode, onChange: handleChangeMode }), /* @__PURE__ */ _(SearchFormProvider, { term: query, setTerm: setQuery }, /* @__PURE__ */ _("div", { class: Omnibar_default.spacer }, /* @__PURE__ */ _("div", { class: Omnibar_default.popup }, /* @__PURE__ */ _(ResizingContainer, { className: Omnibar_default.field }, mode === "search" ? /* @__PURE__ */ _(SearchForm, { autoFocus, onOpenSuggestion: handleOpenSuggestion, onSubmit: handleSubmitSearch }) : /* @__PURE__ */ _(AiChatForm, { chat: query, autoFocus, onChange: setQuery, onSubmit: handleSubmitChat })), mode === "search" && /* @__PURE__ */ _(SuggestionsList, { onOpenSuggestion: handleOpenSuggestion })))));
   }
   var init_Omnibar2 = __esm({
     "pages/new-tab/app/omnibar/components/Omnibar.js"() {
@@ -10190,9 +10234,9 @@
   // ../node_modules/lottie-web/build/player/lottie.js
   var require_lottie = __commonJS({
     "../node_modules/lottie-web/build/player/lottie.js"(exports, module) {
-      typeof document !== "undefined" && typeof navigator !== "undefined" && function(global, factory10) {
+      typeof document !== "undefined" && typeof navigator !== "undefined" && (function(global, factory10) {
         typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory10() : typeof define === "function" && define.amd ? define(factory10) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, global.lottie = factory10());
-      }(exports, function() {
+      })(exports, (function() {
         "use strict";
         var svgNS = "http://www.w3.org/2000/svg";
         var locationHref = "";
@@ -10233,7 +10277,7 @@
           ProxyFunction.prototype = prototype;
           return ProxyFunction;
         }
-        var audioControllerFactory = function() {
+        var audioControllerFactory = (function() {
           function AudioController(audioFactory) {
             this.audios = [];
             this.audioFactory = audioFactory;
@@ -10319,8 +10363,8 @@
           return function() {
             return new AudioController();
           };
-        }();
-        var createTypedArray = function() {
+        })();
+        var createTypedArray = (function() {
           function createRegularArray(type, len) {
             var i5 = 0;
             var arr = [];
@@ -10355,7 +10399,7 @@
             return createTypedArrayFactory;
           }
           return createRegularArray;
-        }();
+        })();
         function createSizedArray(len) {
           return Array.apply(null, {
             length: len
@@ -10469,13 +10513,13 @@
           this.type = type;
           this.nativeError = nativeError;
         }
-        var createElementID = /* @__PURE__ */ function() {
+        var createElementID = /* @__PURE__ */ (function() {
           var _count = 0;
           return function createID() {
             _count += 1;
             return idPrefix$1 + "__lottie_element_" + _count;
           };
-        }();
+        })();
         function HSVtoRGB(h5, s4, v4) {
           var r4;
           var g6;
@@ -10584,7 +10628,7 @@
           }
           return HSVtoRGB(hsv[0], hsv[1], hsv[2]);
         }
-        var rgbToHex = function() {
+        var rgbToHex = (function() {
           var colorMap = [];
           var i5;
           var hex;
@@ -10604,7 +10648,7 @@
             }
             return "#" + colorMap[r4] + colorMap[g6] + colorMap[b4];
           };
-        }();
+        })();
         var setSubframeEnabled = function setSubframeEnabled2(flag) {
           subframeEnabled = !!flag;
         };
@@ -10646,7 +10690,7 @@
             return o5 && "function" == typeof Symbol && o5.constructor === Symbol && o5 !== Symbol.prototype ? "symbol" : typeof o5;
           }, _typeof$5(o4);
         }
-        var dataManager = /* @__PURE__ */ function() {
+        var dataManager = /* @__PURE__ */ (function() {
           var _counterId = 1;
           var processes = [];
           var workerFn;
@@ -10815,7 +10859,7 @@
                     }
                     return null;
                   }
-                  var checkText = /* @__PURE__ */ function() {
+                  var checkText = /* @__PURE__ */ (function() {
                     var minimumVersion = [4, 4, 14];
                     function updateTextLayer(textLayer) {
                       var documentData = textLayer.t.d;
@@ -10849,8 +10893,8 @@
                         }
                       }
                     };
-                  }();
-                  var checkChars = /* @__PURE__ */ function() {
+                  })();
+                  var checkChars = /* @__PURE__ */ (function() {
                     var minimumVersion = [4, 7, 99];
                     return function(animationData2) {
                       if (animationData2.chars && !checkVersion(minimumVersion, animationData2.v)) {
@@ -10926,8 +10970,8 @@
                         }
                       }
                     };
-                  }();
-                  var checkPathProperties = /* @__PURE__ */ function() {
+                  })();
+                  var checkPathProperties = /* @__PURE__ */ (function() {
                     var minimumVersion = [5, 7, 15];
                     function updateTextLayer(textLayer) {
                       var pathData = textLayer.t.p;
@@ -10973,8 +11017,8 @@
                         }
                       }
                     };
-                  }();
-                  var checkColors = /* @__PURE__ */ function() {
+                  })();
+                  var checkColors = /* @__PURE__ */ (function() {
                     var minimumVersion = [4, 1, 9];
                     function iterateShapes(shapes) {
                       var i5;
@@ -11033,8 +11077,8 @@
                         }
                       }
                     };
-                  }();
-                  var checkShapes = /* @__PURE__ */ function() {
+                  })();
+                  var checkShapes = /* @__PURE__ */ (function() {
                     var minimumVersion = [4, 4, 18];
                     function completeClosingShapes(arr) {
                       var i5;
@@ -11109,7 +11153,7 @@
                         }
                       }
                     };
-                  }();
+                  })();
                   function completeData(animationData2) {
                     if (animationData2.__complete) {
                       return;
@@ -11140,7 +11184,7 @@
                   _workerSelf.dataManager = dataFunctionManager();
                 }
                 if (!_workerSelf.assetLoader) {
-                  _workerSelf.assetLoader = /* @__PURE__ */ function() {
+                  _workerSelf.assetLoader = /* @__PURE__ */ (function() {
                     function formatResponse(xhr) {
                       var contentTypeHeader = xhr.getResponseHeader("content-type");
                       if (contentTypeHeader && xhr.responseType === "json" && contentTypeHeader.indexOf("json") !== -1) {
@@ -11191,7 +11235,7 @@
                     return {
                       load: loadAsset
                     };
-                  }();
+                  })();
                 }
                 if (e4.data.type === "loadAnimation") {
                   _workerSelf.assetLoader.load(e4.data.path, e4.data.fullPath, function(data2) {
@@ -11286,9 +11330,9 @@
             loadData,
             completeAnimation
           };
-        }();
-        var ImagePreloader = function() {
-          var proxyImage = function() {
+        })();
+        var ImagePreloader = (function() {
+          var proxyImage = (function() {
             var canvas = createTag("canvas");
             canvas.width = 1;
             canvas.height = 1;
@@ -11296,7 +11340,7 @@
             ctx.fillStyle = "rgba(0,0,0,0)";
             ctx.fillRect(0, 0, 1, 1);
             return canvas;
-          }();
+          })();
           function imageLoaded() {
             this.loadedAssets += 1;
             if (this.loadedAssets === this.totalImages && this.loadedFootagesCount === this.totalFootages) {
@@ -11475,7 +11519,7 @@
             setCacheType
           };
           return ImagePreloaderFactory;
-        }();
+        })();
         function BaseEvent() {
         }
         BaseEvent.prototype = {
@@ -11516,7 +11560,7 @@
             }
           }
         };
-        var markerParser = /* @__PURE__ */ function() {
+        var markerParser = /* @__PURE__ */ (function() {
           function parsePayloadLines(payload) {
             var lines = payload.split("\r\n");
             var keys = {};
@@ -11557,8 +11601,8 @@
             }
             return markers;
           };
-        }();
-        var ProjectInterface = /* @__PURE__ */ function() {
+        })();
+        var ProjectInterface = /* @__PURE__ */ (function() {
           function registerComposition(comp2) {
             this.compositions.push(comp2);
           }
@@ -11582,7 +11626,7 @@
             _thisProjectFunction.registerComposition = registerComposition;
             return _thisProjectFunction;
           };
-        }();
+        })();
         var renderers = {};
         var registerRenderer = function registerRenderer2(key2, value2) {
           renderers[key2] = value2;
@@ -12273,7 +12317,7 @@
             this.onError.call(this, error);
           }
         };
-        var animationManager = function() {
+        var animationManager = (function() {
           var moduleOb = {};
           var registeredAnimations = [];
           var initTime = 0;
@@ -12491,8 +12535,8 @@
           moduleOb.unmute = unmute;
           moduleOb.getRegisteredAnimations = getRegisteredAnimations;
           return moduleOb;
-        }();
-        var BezierFactory = function() {
+        })();
+        var BezierFactory = (function() {
           var ob2 = {};
           ob2.getBezierEasing = getBezierEasing;
           var beziers = {};
@@ -12603,16 +12647,16 @@
             }
           };
           return ob2;
-        }();
-        var pooling = /* @__PURE__ */ function() {
+        })();
+        var pooling = /* @__PURE__ */ (function() {
           function _double(arr) {
             return arr.concat(createSizedArray(arr.length));
           }
           return {
             "double": _double
           };
-        }();
-        var poolFactory = /* @__PURE__ */ function() {
+        })();
+        var poolFactory = /* @__PURE__ */ (function() {
           return function(initialLength, _create, _release) {
             var _length = 0;
             var _maxLength = initialLength;
@@ -12644,8 +12688,8 @@
             }
             return ob2;
           };
-        }();
-        var bezierLengthPool = function() {
+        })();
+        var bezierLengthPool = (function() {
           function create() {
             return {
               addedLength: 0,
@@ -12654,8 +12698,8 @@
             };
           }
           return poolFactory(8, create);
-        }();
-        var segmentsLengthPool = function() {
+        })();
+        var segmentsLengthPool = (function() {
           function create() {
             return {
               lengths: [],
@@ -12671,7 +12715,7 @@
             element.lengths.length = 0;
           }
           return poolFactory(8, create, release);
-        }();
+        })();
         function bezFunction() {
           var math = Math;
           function pointOnLine2D(x1, y1, x22, y22, x3, y32) {
@@ -12699,7 +12743,7 @@
             }
             return diffDist > -1e-4 && diffDist < 1e-4;
           }
-          var getBezierLength = /* @__PURE__ */ function() {
+          var getBezierLength = /* @__PURE__ */ (function() {
             return function(pt1, pt2, pt3, pt4) {
               var curveSegments = getDefaultCurveSegments();
               var k4;
@@ -12734,7 +12778,7 @@
               lengthData.addedLength = addedLength;
               return lengthData;
             };
-          }();
+          })();
           function getSegmentsLength(shapeData) {
             var segmentsLength = segmentsLengthPool.newElement();
             var closed = shapeData.c;
@@ -12764,7 +12808,7 @@
             this.partialLength = partial;
             this.point = point;
           }
-          var buildBezierData = /* @__PURE__ */ function() {
+          var buildBezierData = /* @__PURE__ */ (function() {
             var storedData = {};
             return function(pt1, pt2, pt3, pt4) {
               var bezierName = (pt1[0] + "_" + pt1[1] + "_" + pt2[0] + "_" + pt2[1] + "_" + pt3[0] + "_" + pt3[1] + "_" + pt4[0] + "_" + pt4[1]).replace(/\./g, "p");
@@ -12805,7 +12849,7 @@
               }
               return storedData[bezierName];
             };
-          }();
+          })();
           function getDistancePerc(perc, bezierData) {
             var percents = bezierData.percents;
             var lengths = bezierData.lengths;
@@ -13313,7 +13357,7 @@
           };
           this.addEffect = addEffect;
         }
-        var PropertyFactory = /* @__PURE__ */ function() {
+        var PropertyFactory = /* @__PURE__ */ (function() {
           function getProp(elem2, data2, type, mult, container) {
             if (data2.sid) {
               data2 = elem2.globalData.slotManager.getProp(data2);
@@ -13344,7 +13388,7 @@
             getProp
           };
           return ob2;
-        }();
+        })();
         function DynamicPropertyContainer() {
         }
         DynamicPropertyContainer.prototype = {
@@ -13373,12 +13417,12 @@
             this._isAnimated = false;
           }
         };
-        var pointPool = function() {
+        var pointPool = (function() {
           function create() {
             return createTypedArray("float32", 2);
           }
           return poolFactory(8, create);
-        }();
+        })();
         function ShapePath() {
           this.c = false;
           this._length = 0;
@@ -13464,7 +13508,7 @@
         ShapePath.prototype.length = function() {
           return this._length;
         };
-        var shapePool = function() {
+        var shapePool = (function() {
           function create() {
             return new ShapePath();
           }
@@ -13496,7 +13540,7 @@
           var factory10 = poolFactory(4, create, release);
           factory10.clone = clone;
           return factory10;
-        }();
+        })();
         function ShapeCollection() {
           this._length = 0;
           this._maxLength = 4;
@@ -13517,7 +13561,7 @@
           }
           this._length = 0;
         };
-        var shapeCollectionPool = function() {
+        var shapeCollectionPool = (function() {
           var ob2 = {
             newShapeCollection,
             release
@@ -13550,8 +13594,8 @@
             _length += 1;
           }
           return ob2;
-        }();
-        var ShapePropertyFactory = function() {
+        })();
+        var ShapePropertyFactory = (function() {
           var initFrame2 = -999999;
           function interpolateShape(frameNum, previousValue, caching) {
             var iterationIndex = caching.lastIndex;
@@ -13750,7 +13794,7 @@
           KeyframedShapeProperty.prototype.interpolateShape = interpolateShape;
           KeyframedShapeProperty.prototype.setVValue = setVValue2;
           KeyframedShapeProperty.prototype.addEffect = addEffect2;
-          var EllShapeProperty = function() {
+          var EllShapeProperty = (function() {
             var cPoint = roundCorner;
             function EllShapePropertyFactory(elem2, data2) {
               this.v = shapePool.newElement();
@@ -13819,8 +13863,8 @@
             };
             extendPrototype([DynamicPropertyContainer], EllShapePropertyFactory);
             return EllShapePropertyFactory;
-          }();
-          var StarShapeProperty = function() {
+          })();
+          var StarShapeProperty = (function() {
             function StarShapePropertyFactory(elem2, data2) {
               this.v = shapePool.newElement();
               this.v.setPathData(true, 0);
@@ -13924,8 +13968,8 @@
             };
             extendPrototype([DynamicPropertyContainer], StarShapePropertyFactory);
             return StarShapePropertyFactory;
-          }();
-          var RectShapeProperty = function() {
+          })();
+          var RectShapeProperty = (function() {
             function RectShapePropertyFactory(elem2, data2) {
               this.v = shapePool.newElement();
               this.v.c = true;
@@ -14001,7 +14045,7 @@
             };
             extendPrototype([DynamicPropertyContainer], RectShapePropertyFactory);
             return RectShapePropertyFactory;
-          }();
+          })();
           function getShapeProp(elem2, data2, type) {
             var prop;
             if (type === 3 || type === 4) {
@@ -14035,8 +14079,8 @@
           ob2.getConstructorFunction = getConstructorFunction;
           ob2.getKeyframedConstructorFunction = getKeyframedConstructorFunction;
           return ob2;
-        }();
-        var Matrix = /* @__PURE__ */ function() {
+        })();
+        var Matrix = /* @__PURE__ */ (function() {
           var _cos = Math.cos;
           var _sin = Math.sin;
           var _tan = Math.tan;
@@ -14369,7 +14413,7 @@
             this.props = createTypedArray("float32", 16);
             this.reset();
           };
-        }();
+        })();
         function _typeof$3(o4) {
           "@babel/helpers - typeof";
           return _typeof$3 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o5) {
@@ -14507,7 +14551,7 @@
           }
         } catch (err) {
         }
-        var ShapeModifiers = function() {
+        var ShapeModifiers = (function() {
           var ob2 = {};
           var modifiers = {};
           ob2.registerModifier = registerModifier;
@@ -14521,7 +14565,7 @@
             return new modifiers[nm](elem2, data2);
           }
           return ob2;
-        }();
+        })();
         function ShapeModifier() {
         }
         ShapeModifier.prototype.initModifierProperties = function() {
@@ -14961,7 +15005,7 @@
             this._mdf = false;
           }
         };
-        var TransformPropertyFactory = function() {
+        var TransformPropertyFactory = (function() {
           var defaultVector = [0, 0];
           function applyToMatrix(mat) {
             var _mdf = this._mdf;
@@ -15187,7 +15231,7 @@
           return {
             getTransformProperty
           };
-        }();
+        })();
         function RepeaterModifier() {
         }
         extendPrototype([ShapeModifier], RepeaterModifier);
@@ -16065,7 +16109,7 @@
             weight: fontData.fWeight || fWeight
           };
         }
-        var FontManager = function() {
+        var FontManager = (function() {
           var maxWaitingTime = 5e3;
           var emptyChar = {
             w: 0,
@@ -16434,7 +16478,7 @@
           };
           Font.prototype = fontPrototype;
           return Font;
-        }();
+        })();
         function SlotManager(animationData2) {
           this.animationData = animationData2;
         }
@@ -16530,7 +16574,7 @@
             };
           }
         };
-        var getBlendMode = /* @__PURE__ */ function() {
+        var getBlendMode = /* @__PURE__ */ (function() {
           var blendModeEnums = {
             0: "source-over",
             1: "multiply",
@@ -16552,7 +16596,7 @@
           return function(mode) {
             return blendModeEnums[mode] || "";
           };
-        }();
+        })();
         function SliderEffect(data2, elem2, container) {
           this.p = PropertyFactory.getProp(elem2, data2.v, 0, 0, container);
         }
@@ -17356,7 +17400,7 @@
           this.data = null;
           this.masksProperties = null;
         };
-        var filtersFactory = function() {
+        var filtersFactory = (function() {
           var ob2 = {};
           ob2.createFilter = createFilter;
           ob2.createAlphaToLuminanceFilter = createAlphaToLuminanceFilter;
@@ -17380,8 +17424,8 @@
             return feColorMatrix;
           }
           return ob2;
-        }();
-        var featureSupport = function() {
+        })();
+        var featureSupport = (function() {
           var ob2 = {
             maskType: true,
             svgLumaHidden: true,
@@ -17394,7 +17438,7 @@
             ob2.svgLumaHidden = false;
           }
           return ob2;
-        }();
+        })();
         var registeredEffects$1 = {};
         var idPrefix = "filter_result_";
         function SVGEffects(elem2) {
@@ -18136,7 +18180,7 @@
           }
           return shapeString;
         };
-        var SVGElementsRenderer = function() {
+        var SVGElementsRenderer = (function() {
           var _identityMatrix = new Matrix();
           var _matrixHelper = new Matrix();
           var ob2 = {
@@ -18353,7 +18397,7 @@
             }
           }
           return ob2;
-        }();
+        })();
         function SVGShapeElement(data2, globalData2, comp2) {
           this.shapes = [];
           this.shapesData = data2.shapes;
@@ -19145,7 +19189,7 @@
           this.recalculate(this.keysIndex);
           this.elem.addDynamicProperty(this);
         };
-        var TextSelectorProp = function() {
+        var TextSelectorProp = (function() {
           var max = Math.max;
           var min = Math.min;
           var floor = Math.floor;
@@ -19308,7 +19352,7 @@
           return {
             getTextSelectorProp
           };
-        }();
+        })();
         function TextAnimatorDataProperty(elem2, animatorProps, container) {
           var defaultData = {
             propType: false
@@ -20745,13 +20789,13 @@
           canvas.height = height2;
           return canvas;
         }
-        var assetLoader = function() {
+        var assetLoader = (function() {
           return {
             loadLumaCanvas: lumaLoader.load,
             getLumaCanvas: lumaLoader.get,
             createCanvas
           };
-        }();
+        })();
         var registeredEffects = {};
         function CVEffects(elem2) {
           var i5;
@@ -23365,7 +23409,7 @@
           }
           return new HCompElement(data2, this.globalData, this);
         };
-        var CompExpressionInterface = /* @__PURE__ */ function() {
+        var CompExpressionInterface = /* @__PURE__ */ (function() {
           return function(comp2) {
             function _thisLayerFunction(name2) {
               var i5 = 0;
@@ -23391,7 +23435,7 @@
             _thisLayerFunction.numLayers = comp2.layers.length;
             return _thisLayerFunction;
           };
-        }();
+        })();
         function _typeof$2(o4) {
           "@babel/helpers - typeof";
           return _typeof$2 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o5) {
@@ -23528,7 +23572,7 @@
             return o5 && "function" == typeof Symbol && o5.constructor === Symbol && o5 !== Symbol.prototype ? "symbol" : typeof o5;
           }, _typeof$1(o4);
         }
-        var ExpressionManager = function() {
+        var ExpressionManager = (function() {
           "use strict";
           var ob = {};
           var Math = BMMath;
@@ -24197,8 +24241,8 @@
           ob.__preventDeadCodeRemoval = [window, document, XMLHttpRequest, fetch, frames, $bm_neg, add, $bm_sum, $bm_sub, $bm_mul, $bm_div, $bm_mod, clamp, radians_to_degrees, degreesToRadians, degrees_to_radians, normalize, rgbToHsl, hslToRgb, linear, random, createPath, _lottieGlobal];
           ob.resetFrame = resetFrame;
           return ob;
-        }();
-        var Expressions = function() {
+        })();
+        var Expressions = (function() {
           var ob2 = {};
           ob2.initExpressions = initExpressions;
           ob2.resetFrame = ExpressionManager.resetFrame;
@@ -24234,8 +24278,8 @@
             animation.renderer.globalData.registerExpressionProperty = registerExpressionProperty;
           }
           return ob2;
-        }();
-        var MaskManagerInterface = function() {
+        })();
+        var MaskManagerInterface = (function() {
           function MaskInterface(mask2, data2) {
             this._mask = mask2;
             this._data = data2;
@@ -24276,8 +24320,8 @@
             return maskFunction;
           };
           return MaskManager;
-        }();
-        var ExpressionPropertyInterface = /* @__PURE__ */ function() {
+        })();
+        var ExpressionPropertyInterface = /* @__PURE__ */ (function() {
           var defaultUnidimensionalValue = {
             pv: 0,
             v: 0,
@@ -24373,8 +24417,8 @@
             }
             return MultidimensionalPropertyInterface(property2);
           };
-        }();
-        var TransformExpressionInterface = /* @__PURE__ */ function() {
+        })();
+        var TransformExpressionInterface = /* @__PURE__ */ (function() {
           return function(transform2) {
             function _thisFunction(name2) {
               switch (name2) {
@@ -24480,8 +24524,8 @@
             });
             return _thisFunction;
           };
-        }();
-        var LayerExpressionInterface = /* @__PURE__ */ function() {
+        })();
+        var LayerExpressionInterface = /* @__PURE__ */ (function() {
           function getMatrix(time2) {
             var toWorldMat = new Matrix();
             if (time2 !== void 0) {
@@ -24637,8 +24681,8 @@
             _thisLayerFunction.registerEffectsInterface = _registerEffectsInterface;
             return _thisLayerFunction;
           };
-        }();
-        var propertyGroupFactory = /* @__PURE__ */ function() {
+        })();
+        var propertyGroupFactory = /* @__PURE__ */ (function() {
           return function(interfaceFunction, parentPropertyGroup) {
             return function(val2) {
               val2 = val2 === void 0 ? 1 : val2;
@@ -24648,8 +24692,8 @@
               return parentPropertyGroup(val2 - 1);
             };
           };
-        }();
-        var PropertyInterface = /* @__PURE__ */ function() {
+        })();
+        var PropertyInterface = /* @__PURE__ */ (function() {
           return function(propertyName, propertyGroup) {
             var interfaceFunction = {
               _name: propertyName
@@ -24663,8 +24707,8 @@
             }
             return _propertyGroup;
           };
-        }();
-        var EffectsExpressionInterface = /* @__PURE__ */ function() {
+        })();
+        var EffectsExpressionInterface = /* @__PURE__ */ (function() {
           var ob2 = {
             createEffectsInterface
           };
@@ -24763,8 +24807,8 @@
             return interfaceFunction;
           }
           return ob2;
-        }();
-        var ShapePathInterface = /* @__PURE__ */ function() {
+        })();
+        var ShapePathInterface = /* @__PURE__ */ (function() {
           return function pathInterfaceFactory(shape, view, propertyGroup) {
             var prop = view.sh;
             function interfaceFunction(val2) {
@@ -24810,8 +24854,8 @@
             });
             return interfaceFunction;
           };
-        }();
-        var ShapeExpressionInterface = /* @__PURE__ */ function() {
+        })();
+        var ShapeExpressionInterface = /* @__PURE__ */ (function() {
           function iterateElements(shapes, view, propertyGroup) {
             var arr = [];
             var i5;
@@ -25344,8 +25388,8 @@
             _interfaceFunction._name = "Contents";
             return _interfaceFunction;
           };
-        }();
-        var TextExpressionInterface = /* @__PURE__ */ function() {
+        })();
+        var TextExpressionInterface = /* @__PURE__ */ (function() {
           return function(elem2) {
             var _sourceText;
             function _thisLayerFunction(name2) {
@@ -25376,7 +25420,7 @@
             });
             return _thisLayerFunction;
           };
-        }();
+        })();
         function _typeof(o4) {
           "@babel/helpers - typeof";
           return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o5) {
@@ -25385,7 +25429,7 @@
             return o5 && "function" == typeof Symbol && o5.constructor === Symbol && o5 !== Symbol.prototype ? "symbol" : typeof o5;
           }, _typeof(o4);
         }
-        var FootageInterface = /* @__PURE__ */ function() {
+        var FootageInterface = /* @__PURE__ */ (function() {
           var outlineInterfaceFactory = function outlineInterfaceFactory2(elem2) {
             var currentPropertyName = "";
             var currentProperty = elem2.getFootageData();
@@ -25438,7 +25482,7 @@
             _interfaceFunction.dataInterface = dataInterfaceFactory(elem2);
             return _interfaceFunction;
           };
-        }();
+        })();
         var interfaces = {
           layer: LayerExpressionInterface,
           effects: EffectsExpressionInterface,
@@ -25450,7 +25494,7 @@
         function getInterface(type) {
           return interfaces[type] || null;
         }
-        var expressionHelpers = /* @__PURE__ */ function() {
+        var expressionHelpers = /* @__PURE__ */ (function() {
           function searchExpressions(elem2, data2, prop) {
             if (data2.x) {
               prop.k = true;
@@ -25518,7 +25562,7 @@
             getStaticValueAtTime,
             setGroupProperty
           };
-        }();
+        })();
         function addPropertyDecorator() {
           function loopOut2(type, duration, durationFlag) {
             if (!this.k || !this.keyframes) {
@@ -26491,7 +26535,7 @@
         registerEffect$1(35, SVGTransformEffect, false);
         registerEffect(35, CVTransformEffect);
         return lottie;
-      });
+      }));
     }
   });
 
@@ -27944,7 +27988,7 @@
     const telemetry2 = useTelemetry();
     useCustomizer({
       title: "\u{1F41E} Debug",
-      id: "debug",
+      id: "_debug",
       icon: /* @__PURE__ */ _(DuckFoot, null),
       visibility: isOpen ? "visible" : "hidden",
       toggle: (_id) => setOpen((prev) => !prev),
@@ -30329,10 +30373,10 @@
       content: {
         messageType: "big_single_action",
         id: "id-big-single",
-        titleText: "Tell Us Your Thoughts on Privacy Pro",
-        descriptionText: "Take our short anonymous survey and share your feedback.",
-        icon: "PrivacyPro",
-        primaryActionText: "Take Survey"
+        titleText: "New! Advanced AI for Subscribers",
+        descriptionText: "Your subscription now includes access to more advanced models in Duck.ai, our private AI chat service. Always optional. No extra cost.",
+        icon: "DuckAi",
+        primaryActionText: "Try Duck.ai"
       }
     },
     big_two_action: {

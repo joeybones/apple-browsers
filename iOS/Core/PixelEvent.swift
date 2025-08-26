@@ -976,6 +976,10 @@ extension Pixel {
         case debugDefaultBrowserPromptFailedToRetrieveUserType
         /// Fired when it is not possible to save from the persistence store the type of user.
         case debugDefaultBrowserPromptFailedToSaveUserType
+        /// Fired when it is not possible to retrieve from the persistence store whether the inactive user modal was shown.
+        case debugDefaultBrowserPromptFailedToRetrieveInactiveModalShown
+        /// Fired when it is not possible to save from the persistence store that the inactive user modal was shown.
+        case  debugDefaultBrowserPromptFailedToSaveInactiveModalShown
 
         /// Fired when the SAD modal sheet appears on screen.
         case defaultBrowserPromptModalShown
@@ -985,6 +989,14 @@ extension Pixel {
         case defaultBrowserPromptModalSetAsDefaultBrowserButtonTapped
         /// Fired when the “Don’t ask again” button of the SAD modal sheet is tapped.
         case defaultBrowserPromptModalDoNotAskAgainButtonTapped
+        /// Fired when the SAD modal sheet for inactive users appears on screen.
+        case defaultBrowserPromptInactiveUserModalShown
+        /// Fired when the “Close” button of the SAD modal sheet for inactive users is tapped.
+        case defaultBrowserPromptInactiveUserModalClosedButtonTapped
+        /// Fired when the “Set As Default Browser" button of the SAD modal sheet for inactive users is tapped.
+        case defaultBrowserPromptInactiveUserModalSetAsDefaultBrowserButtonTapped
+        /// Fired when "Plus even more protections..." button of the SAD modal sheet for inactive users is tapped.
+        case defaultBrowserPromptInactiveUserModalMoreProtectionsButtonTapped
 
         /// Fired when creating the app configurationuser defaults in ai chat settings migration failed.
         case debugFailedToCreateAppConfigurationUserDefaultsInAIChatSettingsMigration
@@ -1151,26 +1163,6 @@ extension Pixel {
         case favoriteLaunchedNTPDaily
         case bookmarkLaunchedDaily
         case newTabPageDisplayedDaily
-
-        // MARK: New Tab Page
-        case newTabPageMessageDisplayed
-        case newTabPageMessageDismissed
-
-        case newTabPageFavoritesPlaceholderTapped
-
-        case newTabPageFavoritesSeeMore
-        case newTabPageFavoritesSeeLess
-
-        case newTabPageCustomize
-
-        case newTabPageShortcutClicked(_ shortcutName: String)
-
-        case newTabPageCustomizeSectionOff(_ sectionName: String)
-        case newTabPageCustomizeSectionOn(_ sectionName: String)
-        case newTabPageSectionReordered
-
-        case newTabPageCustomizeShortcutRemoved(_ shortcutName: String)
-        case newTabPageCustomizeShortcutAdded(_ shortcutName: String)
 
         // MARK: DuckPlayer
 
@@ -2058,10 +2050,18 @@ extension Pixel.Event {
         case .debugDefaultBrowserPromptFailedToRetrieveUserType: return "m_debug_set-as-default-prompt_failed-to-retrieve-user-type"
         case .debugDefaultBrowserPromptFailedToSaveUserType: return "m_debug_set-as-default-prompt_failed-to-save-user-type"
 
+        case .debugDefaultBrowserPromptFailedToRetrieveInactiveModalShown: return "m_debug_set-as-default-prompt_failed-to-retrieve-inactive-modal-shown"
+        case .debugDefaultBrowserPromptFailedToSaveInactiveModalShown: return "m_debug_set-as-default-prompt_failed-to-save-inactive-modal-shown"
+
         case .defaultBrowserPromptModalShown: return "m_set-as-default-prompt_modal-shown"
         case .defaultBrowserPromptModalClosedButtonTapped: return "m_set-as-default-prompt_modal-closed-button-action"
         case .defaultBrowserPromptModalSetAsDefaultBrowserButtonTapped: return "m_set-as-default-prompt_modal-set-as-default-browser-button-action"
         case .defaultBrowserPromptModalDoNotAskAgainButtonTapped: return "m_set-as-default-prompt_modal-do-not-ask-again-button-action"
+
+        case .defaultBrowserPromptInactiveUserModalShown: return "m_set-as-default-prompt_inactive-user-modal-shown"
+        case .defaultBrowserPromptInactiveUserModalClosedButtonTapped: return "m_set-as-default-prompt_inactive-user_modal-closed-button-action"
+        case .defaultBrowserPromptInactiveUserModalSetAsDefaultBrowserButtonTapped: return "m_set-as-default-prompt_inactive-user_modal-set-as-default-browser-button-action"
+        case .defaultBrowserPromptInactiveUserModalMoreProtectionsButtonTapped: return "m_set-as-default-prompt_inactive-user_modal-more-protections-button-action"
 
             // MARK: Debug Web View
 
@@ -2372,31 +2372,6 @@ extension Pixel.Event {
         case .favoriteLaunchedNTPDaily: return "m_favorite_launched_ntp_daily"
         case .bookmarkLaunchedDaily: return "m_bookmark_launched_daily"
         case .newTabPageDisplayedDaily: return "m_new_tab_page_displayed_daily"
-
-        // MARK: New Tab Page
-        case .newTabPageMessageDisplayed: return "m_new_tab_page_message_displayed"
-        case .newTabPageMessageDismissed: return "m_new_tab_page_message_dismissed"
-
-        case .newTabPageFavoritesPlaceholderTapped: return "m_new_tab_page_favorites_placeholder_click"
-
-        case .newTabPageFavoritesSeeMore: return "m_new_tab_page_favorites_see_more"
-        case .newTabPageFavoritesSeeLess: return "m_new_tab_page_favorites_see_less"
-
-        case .newTabPageShortcutClicked(let name):
-            return "m_new_tab_page_shortcut_clicked_\(name)"
-
-        case .newTabPageCustomize: return "m_new_tab_page_customize"
-
-        case .newTabPageCustomizeSectionOff(let sectionName):
-            return "m_new_tab_page_customize_section_off_\(sectionName)"
-        case .newTabPageCustomizeSectionOn(let sectionName):
-            return "m_new_tab_page_customize_section_on_\(sectionName)"
-        case .newTabPageSectionReordered: return "m_new_tab_page_customize_section_reordered"
-
-        case .newTabPageCustomizeShortcutRemoved(let shortcutName):
-            return "m_new_tab_page_customize_shortcut_removed_\(shortcutName)"
-        case .newTabPageCustomizeShortcutAdded(let shortcutName):
-            return "m_new_tab_page_customize_shortcut_added_\(shortcutName)"
 
         // MARK: DuckPlayer
         case .duckPlayerSettingsOpen: return "m_settings_duckplayer_open"

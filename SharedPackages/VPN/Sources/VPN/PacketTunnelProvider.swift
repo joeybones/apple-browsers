@@ -38,7 +38,7 @@ open class PacketTunnelProvider: NEPacketTunnelProvider {
         case tunnelWakeAttempt(_ step: TunnelWakeAttemptStep)
         case tunnelStartOnDemandWithoutAccessToken
         case reportTunnelFailure(result: NetworkProtectionTunnelFailureMonitor.Result)
-        case reportLatency(result: NetworkProtectionLatencyMonitor.Result)
+        case reportLatency(result: NetworkProtectionLatencyMonitor.Result, location: VPNSettings.SelectedLocation)
         case rekeyAttempt(_ step: RekeyAttemptStep)
         case failureRecoveryAttempt(_ step: FailureRecoveryStep)
         case serverMigrationAttempt(_ step: ServerMigrationAttemptStep)
@@ -724,6 +724,15 @@ open class PacketTunnelProvider: NEPacketTunnelProvider {
 
     @MainActor
     open override func startTunnel(options: [String: NSObject]? = nil) async throws {
+        do {
+            try await startTunnelInternal(options: options)
+        } catch {
+            throw error.sanitizedForXPC()
+        }
+    }
+
+    @MainActor
+    private func startTunnelInternal(options: [String: NSObject]? = nil) async throws {
         Logger.networkProtection.log("🚀 Starting tunnel")
 
         // It's important to have this as soon as possible since it helps setup PixelKit
@@ -1570,11 +1579,13 @@ open class PacketTunnelProvider: NEPacketTunnelProvider {
         }
 
         await latencyMonitor.start(serverIP: ip) { [weak self] result in
+            guard let self else { return }
+
             switch result {
             case .error:
-                self?.providerEvents.fire(.reportLatency(result: .error))
+                self.providerEvents.fire(.reportLatency(result: .error, location: self.settings.selectedLocation))
             case .quality(let quality):
-                self?.providerEvents.fire(.reportLatency(result: .quality(quality)))
+                self.providerEvents.fire(.reportLatency(result: .quality(quality), location: self.settings.selectedLocation))
             }
         }
     }
